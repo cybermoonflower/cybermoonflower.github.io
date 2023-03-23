@@ -1,0 +1,245 @@
+/* ====== FONTS ====== */
+
+@font-face {
+  font-family: "AndaleMono";
+  src: url("fonts/andalemo.ttf");
+}
+
+/* ====== COLOR VARIABLES ====== */
+
+:root {
+	--bg-color: #060606; /*1a1a1a, 151617*/
+	--font-color: #949494; /* #9c9c9c; bfbfbf rgb(190, 190, 190) */ 
+	--secondary-color: #d7bce6;
+	--link-hover: #4e4f52;
+	--link-color: #e0e0e0;
+	--link-text: #80a0ab; /* 99bfcc;*/ 
+	--track-color: #2e2e2e; /*3b3b3b ; */
+	--thumb-color: #4e4f52; /* 66686b  */
+}
+
+
+/* ====== PAGE STYLING ====== */
+
+::selection { 
+	background-color: var(--secondary-color);
+	color: var(--bg-color);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--track-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--thumb-color);
+}
+
+
+/* ====== BACKGROUND ====== */
+
+* { 
+	padding:0;
+	box-sizing:border-box;
+	text-decoration:none;
+	-webkit-font-smoothing: none;
+	color: var(--font-color);
+	font-family: AndaleMono, monospace;
+	font-weight: lighter;
+}
+
+
+body { 
+	margin: 0;
+	height: 100%;
+	background-color: var(--bg-color);
+	display: flex;
+	justify-content:center;
+} 
+
+.background {
+	height: 100vh;
+	width: 100%;
+	background-image: url("images/blanket_of_sand.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+}
+
+.container {
+	height: 100vh;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+/*	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);*/
+}
+
+
+
+/* ====== MAIN SCREEN ====== */
+
+main { 
+	margin: auto;
+	padding: 30px 80px 80px 80px;
+	width: 100%;
+	max-width: 860px;
+	height: 88%;
+	background-color: #030303; /* 060606*/
+	clear: both;
+	border: 1px solid #696969;
+  display: flex;
+  flex-direction: column; 
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-size: 16px;
+
+}
+
+main.edit {
+	justify-content: space-around;
+	font-size: 14px;
+}
+
+
+/* ====== TEXT  ====== */
+
+/*general text*/
+
+h1 {
+	font-size: 16px;
+	font-weight: normal;
+	text-transform: uppercase;
+/*	margin-bottom: 4em;*/
+}
+
+p { 
+	line-height:1.55; /*28px*/
+	/*margin: 0;
+	padding-bottom: 30px;*/
+}
+
+
+/*
+br {
+	line-height: 1.55;
+}
+*/
+
+span {
+	margin-top: 2em;
+	margin-bottom: 4em;
+}
+
+
+/*links */
+
+a {
+	color: var(--link-text);
+	padding: 2px;
+	margin: 0px;
+}
+
+a.close{
+	text-align: right;
+	color: #D6D6D6;
+}
+
+a.middle{
+	text-align: center;
+	border: 1px solid grey;
+	padding: 5px;
+}
+
+a.link {
+	color: var(--link-text);
+	padding: 0px;
+	margin: 0px;
+}
+
+a:hover { 
+	background-color: var(--link-hover);
+	color: var(--link-color);
+} 
+
+a.land {
+	color: var(--font-color);
+	background-color: transparent;
+}
+
+
+/*waste
+.break {
+	line-height:1.25;
+	margin: 0;
+	padding-bottom: 18px;
+}
+*/
+
+
+/* ====== MEDIA ====== */
+
+img {
+	display: block;
+	padding-top: 15px;
+	height: auto;
+	width: auto;
+	max-width: 100%;
+}
+
+audio {
+    height: 25px;
+    filter: opacity(50%);
+}
+
+
+/* ====== RESPONSIVE ====== */
+
+
+@media screen and (max-width: 800px) {
+	main {
+		font-size: 15px;
+		max-width: 100%;
+		margin: 0px;
+		padding: 2.5em;
+		padding-top: 1.6em;
+		height: 100%;
+	}
+
+	.container {
+		padding: 0;
+	}
+}
+
+@media only screen and (max-height: 500px) and (orientation: landscape){
+	main {
+		font-size: 14px;
+		max-width: 100%;
+		margin: 0px;
+		padding: 2.5em;
+		padding-top: 1.6em;
+		height: 100%;
+	}
+
+	.container {
+		padding: 0;
+	}
+}
+
+/*
+@media only screen and (max-width: 600px), (orientation: landscape){
+   main {
+   	font-size: 16px;
+   	max-width: 100%;
+   	margin: 0px;
+   	padding: 3.5em;
+   	padding-top: 1em;
+   	height: 100%;
+   	border: 0px;
+   }
+
+.container {
+	padding: 0;
+}
+}
+
+/*

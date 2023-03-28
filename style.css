@@ -122,6 +122,9 @@ p {
 	padding-bottom: 30px;*/
 }
 
+blockquote {
+		line-height:1.55;
+}
 
 /*
 br {

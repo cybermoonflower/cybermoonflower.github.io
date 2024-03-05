@@ -191,6 +191,7 @@ border: 2px ridge var(--nav-button-border);
 color: var(--button-text);
 }
 
+
 .nav-button:hover {
 	cursor: pointer;
 	background-color: var(--button-hover);

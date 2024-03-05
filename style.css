@@ -51,12 +51,12 @@
 
 	--nav-bg: #c9c9c9;
   --navMin-bg: #c9c9c9;
-  --nav-border:grey ;
-  --nav-button-border: grey;
+  --nav-border:#a8a8a8 ;
+  --nav-button-border: #a8a8a8;
   --button-hover: #66686b;
   --button-text: black;
   --buttonMin-text:black ;
-  --main-border: grey;
+  --main-border: #a8a8a8;
 
 	--color-text: #1797cf;
 	--highlight-text: black;

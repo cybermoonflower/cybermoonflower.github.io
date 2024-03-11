@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>design_patterns.txt</title>
+</head>
+<body>
+<div class="background" id="background-container">
+
+	<!-- Navigation Bar -->
+	<div class="navigation">
+		<div class="nav-box">
+			<a class="nav-button" href="notebook.html">&#10094;</a>
+			<a class="nav-button"  href="session.html">v1.1.0</a>
+		</div>
+				
+		<div class="nav-box">
+			<p class="nav-button" id="fullScreen">&#9215;</p>
+			<p class="nav-button" id="themeSelect">&#9680;</p>
+		</div>
+	</div>
+
+	<!-- Content -->
+
+	<main class="entry">
+
+		<h1>Design Patterns</h1>
+			
+		<p>I don't have a design philosophy; not because I don't want one, I just don’t quite understand the process of acquiring one. If 'design philosophy' refers to the set of principles, beliefs, and values that guide your approach to design — then I am a limbic creature, for I am guided by nothing more than intuition, coffee and the nearest dopamine hit. Nevertheless, I want to better understand why and how I make the things I do. In lieu of a design philosophy, I've been exploring what I call design patterns.</p>
+
+		<p>A design pattern is a set of repeated themes and choices that show up in the way your work is designed. These patterns manifest throughout all points of your process, and they collectively reveal the vision that informs your choices.</p>
+
+
+		<p>I like the idea of searching for my design patterns over figuring out my design philosophy, since patterns are tangible and capable of detection. Instead of establishing a vision[1] and making work that follows it, I find it easier to make things first and then let those things retrospectively reveal my vision to me.</p>
+
+		<p>Below are notes on the patterns that I have observed in my own website design approach.</p>
+
+
+		<h3><span class="">1. Experiences as Inspiration</span></h3>
+
+		<p>My inspiration often comes from an experience — one that has left me with a strong feeling or ambience, after which I am motivated to recreate that feeling in my own way. Although I turn to websites for interface ideas, the sites themselves rarely act as a catalyst for creativity. Experiences are my inspiration, and my websites are the net I use to capture them[2].</p>
+
+		<p><span class="underline">Example 1: Meta-POV</span></p>
+
+		<figure class="float-R">
+			<img width="180" src="images/talos-terminal.jpeg">
+		</figure>
+
+		<p>This website was originally inspired by 'The Talos Principle', a video game where you play as a robot in a "contradictory world of ancient ruins and advanced technology"[3]. Throughout the game, you encounter computer terminals holding archived files which offer clues about the previous civilization. </p>
+
+		<p>As I interacted with these terminal screens through a first-person perspective, all whilst being on a screen myself (my nintendo switch), I was left with this strange meta-POV feeling that I really enjoyed. This website was an attempt to emulate that terminal, along with the feeling of using it. I tried to match the font, layout, and file naming system, though instead of an eye, I opted for flower ascii art (because of course &#9880;).</p>
+
+		<figure class="fullImg" >
+				<img  src="images/talos-typing.jpeg">
+			<figcaption>'The Talos Principle' gameplay screenshot, 00.00.00 </figcaption>
+		</figure>
+
+		<p><span class="underline">Example 2: Cosmic Connection</span></p>
+
+		<p>In 2020, while I was working on a draft website, I experimented with a color theme setup that would automatically adjust depending on what phase the moon was currently in. For example, during a full moon, the website is set to a light theme, and during a crescent moon, the website is set to a dark theme. No website is shown during a new moon. This design was accomplished using the SunCalc module[4] to calculate lunar phases, paired with an if-statement to toggle theme classes.</p>
+
+		<figure class="fullImg" >
+			<img src="images/moon-theme.png">
+			<figcaption>'Moon phase theme' in JS console, showcasing three different phases</figcaption>
+		</figure>
+
+		<p>I was inspired toward this concept because of an exhibition I saw at Nuit Blanche Toronto 2018 called 'One Sky'. Inside the small planetarium, stars are digitally projected in real time across a raised dome. They are made visible once more in an otherwise polluted sky, but they are also made audible, as "Each star is converted to a musical note based on its color and brightness... The stars each flash and fade as they play their notes, creating a series of patterns across the celestial sphere"[5].</p>
+
+		<p>The result of this setup was the sublime and cosmic feeling that I was hearing the music of the universe. It was as if the stars had always, for eons, been giggling and singing amongst themselves above me, and I was only now able to hear them. This “multi-sensory experience of the cosmos”[6] made me realize just how much of the world and its data we don't process because of our limited senses. Technology makes it possible for us to connect to the cosmos by converting it into a language our body can respond to.</p>
+
+		<div class="imageWrap">
+			<div class="imageWrap-item">
+				<figure class="videoFig">
+					<video controls><source src="images/one-sky.mov"></video>
+					<figcaption>'One Sky', 09.29.18 </figcaption>
+				</figure>
+			</div>
+			<div class="imageWrap-item">
+				<figure>
+					<img src="images/astral-concert.jpg">
+					<figcaption>Sabin Bălașa, 'Astral Concert' (2000-2008) </figcaption>
+				</figure>
+			</div>
+		</div>
+
+		<p>That feeling of cosmic connection is what I wanted to achieve with my moon phase theme. As liminal beings, with one foot in the physical and one in the digital, we are able to connect to new worlds at the risk of disconnecting from old ones. I wanted to create a website where, even whilst exploring the digital world, the physical world continued to linger in the periphery.</p>
+
+		<h3><span class="">2. Primitive design</span></h3>
+
+		<p>I am drawn to design that has been stripped of all personality and flesh, left to survive with nothing but a skeleton and willpower. Minimalism and Brutalism may come to mind, but I envision something more... primitive. For example, the text formatting on this site is partially inspired by plain text files, which offer one font family, size and style throughout. Txt files are skeletal, bare-bones, and yet their lack of font-personality makes them customizable through strange and innate ways: capitalization, symbols, ascii art, spacing, dash borders — with these, a personality can be rebuilt.</p>
+
+		<p>If I were to describe what primitive design is, I'd say it is uncontrived but composed, gritty but soothing, constrained but technical — and quiet, oddly quiet. Primitive design doesn't scream "I am an attempt to break free from traditional/modern/corporate design!", it crouches in some corner with no awareness of a nemesis. Primitive design can be a return, an escape, or a promise; a default state, adaptable to all temporal moods. Primitive design is for technologically advanced limbic creatures.</p>
+
+		<table class="image-table">
+			<tbody>
+				<tr>
+					<th>Minimalist</th>
+					<th>Brutalist</th>
+					<th>Primitive</th>
+				<tr>
+					<td><img class="table-img" width="100%" src="images/minimalist-web.jpeg"></td>
+					<td><img class="table-img" width="100%" src="images/brutalist-web.jpeg"></td>
+					<td><img class="table-img" width="100%"  src="images/primitive-note.png"></td>
+				</tr>
+					</tr>
+					<tr>
+					<td>https://eigenhain.com</td>
+					<td>https://reas.com/</td>
+					<td>Notepad</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3>3. Cyber Projection</h3>
+
+		<p>My primary focus is to create what ~I~ like. In my mind, 'user experience' and 'my experience' are hard to seperate. If I like it janky — janky it is. If I like it unreadable — unreadable it is. Whenever I try to conform my design to a general entity known as a user, or a more specific entity known as an employer, I find myself straying away from what looks and feels nice to my own body and brain.</p>
+
+		<p>I still try to create a welcoming environment for visitors, I just don't feel obligated to do things in a polished or professional manner. The benefit of this mindset is a certain degree of uniqueness and honesty which may or may not lead to good design, but definitely leads to a good time.</p>
+
+		<p>My approach is self-ish. The websites I make originate from a central point in my self. Their radius extends to a limited distance. The result is a digital aura around my site that welcomes in visitors with matching energies, and filters out anyone and anything that does not match.</p>
+
+		<p>In a way, the design of my website is the design of its aura. If I begin at a general point, I create an aura that will accept generally anyone. Why create a website with an aura that is no different to a social media site or a public platform? Why allow it to be so readily permeated? During astral projection, it is often advised to visualize a protective aura around the self for safe travels; cyber projection is no different.</p>
+
+		<figure class="fullImg">
+			<img src="https://www.sabinbalasa.com/public/upload/genesis-detail-by-sabin-balasa.jpg">
+			<figcaption>Sabin Bălașa, 'Genesis' (n.d.)</figcaption>
+		</figure>
+
+		<h3><span>4. Tools vs Portfolios</span></h3>
+
+		<p>I’ve noticed that my websites remain meaningful to me only if I also have reason to visit and use them. Whenever a site of mine dwindles into a static showcase for work, I lose interest in it. I think this is because I value websites as tools, not just as portfolios; I want my websites to be useful to others and also to myself. This site started to feel like a portfolio, as I would only remember its existence when I wanted to add content to it. I've recently been molding it back into a tool that inspires writing and reflection.</p>
+
+		<p>The mindset of 'websites as tools' is also evident in my local website, 'Notebook', which originated from my desire to have a place where I could organize and access all my personal notes. I had first tried out Obsidian and Notion for this purpose, as these tools worked great for school notes and lectures; however, I just couldn't make them work for my own thoughts. One day, I decided to try a website.</p>
+
+
+		<div class="imageWrap">
+			<div class="imageWrap-item">
+				<figure>
+					<img src="images/notebook-honesty.png">
+					<figcaption>/notebook/honesty.html</figcaption>
+				</figure>
+			</div>
+			<div class="imageWrap-item">
+				<figure>
+					<img src="images/notebook-file.png">
+					<figcaption>Notebook in Sublime Text</figcaption>
+				</figure>
+			</div>
+		</div>
+
+		<p>I admit, it's inefficient to use HTML files in the manner of a notetaking app — there's a fair amount of friction, and formatting takes time. I'm okay with that though, because efficiency isn't my goal, consistency is. Something about this setup just works for me. I have full control over the design and underlying structure of the site; there's a sense of autonomy that is comparable to using a physical journal. I've been maintaining 'Notebook' for two years now. It has grown massive. I back it up regularly. I think a piece of my soul has been tethered to it.</p>
+
+		<p> Maybe what I really want is to design my own programs for my computer, instead of relying on programs made by other people. I don't know how to make programs (yet), but I do know how to make websites, so this is my compromise. When someone visits my site, I want them to feel as though they are directly accessing a part of my personal computer, rather than a portfolio that was tailored to their visit. Because in some way, that's exactly what this is: personal.</p>
+
+		<hr>
+		<br>
+
+		<p>References</p>
+
+		<ul>
+			<li>[1] I'm going to use philosophy and vision interchangeably. I know they typically imply different things. For the sake of this piece, they are the same.</li>
+			<li>[2] A spider's <span class="underline">web</span> as a net to capture - <span class="underline">web</span>/site as the sight (location) of a web (net) - website as a method for capturing. What does your web(site) capture? </li>
+			<li>[3] <a target="_blank" href="https://store.steampowered.com/app/257510/The_Talos_Principle/">https://store.steampowered.com/app/257510/The_Talos_Principle/</a></li>
+			<li>[4] <a target="_blank" href="https://github.com/mourner/suncalc?tab=readme-ov-file">https://github.com/mourner/suncalc?tab=readme-ov-file</a> </li>
+			<li>[5] <a target="_blank" href="https://www.system-sounds.com/one-sky/">https://www.system-sounds.com/one-sky/</a></li>
+			<li>[6] <a target="_blank" href="https://www.utoronto.ca/news/look-check-out-u-t-s-musical-exploration-night-sky-and-these-other-nuit-blanche-events">https://www.utoronto.ca/news/look-check-out-u-t-s-musical-exploration-night-sky-and-these-other-nuit-blanche-events</a></li>
+		</ul>
+
+		<br>
+		<hr>
+
+		<ul>
+			<li>Posted: March 11, 2024 </li>
+		</ul>
+
+
+
+	</main>
+</div>
+<input type="hidden" id="classState" name="classState" value="background">
+</body>
+<script src="script.js"></script>
+</html>

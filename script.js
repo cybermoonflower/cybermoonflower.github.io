@@ -1,5 +1,28 @@
 
+/* ========== AUTOMATE: LOG STYLING  ======== */
+
+document.addEventListener("DOMContentLoaded", function() {
+  var list = document.getElementById('logList');
+  var listItems = list.getElementsByTagName('li');
+
+  for (var i = 0; i < listItems.length; i++) {
+    
+    var item = listItems[i];
+    
+    var matches = item.textContent.match(/^(\d{6})\s+(\S+)\s+(.*)$/);
+
+    if (matches && matches.length === 4) {
+      var date = matches[1];
+      var category = matches[2];
+      var description = matches[3];
+
+      item.innerHTML = '<span class="color">' + date + ':.....</span> [' + category + ']: ' + description ;
+    }
+  }
+});
+
 /* ========== THEME SWITCH ======== */
+
 
 const currentTheme = localStorage.getItem("theme");
 const themes = document.querySelectorAll(".theme");
@@ -24,7 +47,6 @@ if (currentTheme) {
     document.documentElement.setAttribute('data-theme', newTheme);
       localStorage.setItem('theme', newTheme);
     });
-
 
 /* ========== EXPAND VIEW  ======== */
 

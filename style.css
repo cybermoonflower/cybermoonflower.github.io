@@ -469,9 +469,11 @@ figcaption {
 	width: 100%;
  }
 
-.centerImg > img {
-	display: block;
-	margin: auto;
+.centerImg {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
 }
 
 video {
@@ -514,7 +516,7 @@ figure.float-L {
   width: 100%;
   gap: 20px;
   justify-content: space-between;
-  	margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 .imageWrap img {
   display: block;

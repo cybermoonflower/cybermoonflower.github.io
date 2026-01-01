@@ -109,16 +109,37 @@ body {
 
 /* ====== BACKGROUND  ====== */
 
+#clockbox {
+
+	position: fixed;
+	bottom: 1px;
+	right: 1px;
+	color: var(--font-color);
+	font-size: 14px;
+	background-color: var(--bg-color);
+	padding: 5px;
+		border: 2px ridge var(--nav-border);
+
+
+
+}
+
 .background {
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
 	width: 100vw;
 	padding: 20px;
-	background-image: url("images/forest-bg.jpg");
+
+	background-image: url("images/blanket_of_sand.png");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100%;
 	background-position: top;
+
+
+	/*
+	background: rgb(180,180,180);
+	*/
 }
 
 .background-min {
@@ -366,6 +387,7 @@ td, th, table {
 td, th {
 	padding: 2px;
 	padding-left: 4px;
+	vertical-align: top;
 }
 
 .image-table {
@@ -374,6 +396,20 @@ td, th {
 
 .table-img {
 margin: auto;
+}
+
+td > ul {
+	line-height:1.55;
+	  padding-top: 0px;
+	  padding-bottom: 0px;
+	  margin-top: 0;
+	  margin-bottom: 0;
+	  list-style-type: square;
+}
+
+td > ul > li {
+		line-height:1.55;
+		padding: 0px;
 }
 
 /*list */
@@ -469,7 +505,12 @@ figcaption {
 	width: 100%;
  }
 
-.centerImg {
+ .centerImg {
+	margin: auto;
+	margin-bottom: 2em;
+ }
+
+.centerImg img {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -530,6 +571,85 @@ figure.float-L {
   max-height: 380px;
 }
 
+
+/* IMAGE MODAL  */
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    pointer-events: none; /* lets interactions with text persist */
+}
+
+.modal-content {
+		display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 500px;
+    background-color: var(--bg-color);
+    padding: 0px;
+    border-radius: 0px;
+    border: 2px ridge var(--main-border);
+    z-index: 2; 
+    pointer-events: auto; 
+    resize: both; /* let user resize boxes*/
+    overflow: auto;
+}
+
+.modal-header {
+    position: sticky; 
+    top: 0; 
+    z-index: 3;
+    height: 25px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    background-color: var(--nav-bg); 
+    border: 2px ridge var(--nav-border);
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    border: 0px;
+}
+
+.modal-caption {
+    flex-grow: 1;
+}
+
+.close {
+		margin: 0px;
+		width: auto;
+		height: 100%;
+		padding: 0px 5px 0px 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+		color: var(--font-color); 
+    background-color: var(--nav-bg); 
+    border: 2px ridge var(--nav-border);
+  	cursor: pointer; 
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: red;
+}
 
 /* ====== RESPONSIVE ====== */
 

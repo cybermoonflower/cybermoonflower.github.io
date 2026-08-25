@@ -294,7 +294,7 @@ h3 {
 	font-weight: normal;
 	margin-bottom: 1.55em;
 	margin-top: 2.5em;
-	border-bottom: 1px solid var(--underline-text);
+	border-bottom: 1px dashed var(--underline-text);
 }
 
 h4 {
@@ -321,6 +321,11 @@ p.small {
 	margin-bottom: 2em;
 }
 
+.about > p {
+	line-height:1.35;
+	margin-bottom: 2em;
+}
+
 .story > p {
 	line-height:1.35;
 	margin: 0;
@@ -330,7 +335,6 @@ p.small {
 .story > p:before {
 	content: "\a0\a0\a0\a0";
 }
-
 
 .chapterBreak {
 	margin: 3.5em;
@@ -461,8 +465,8 @@ a:hover {
 } 
 
 hr {
-border-style: solid;
-border-width: 0.001em;
+border-style: dashed;
+max-height: 1px;
 }
 
 /* ====== MEDIA ====== */
